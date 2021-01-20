@@ -17,7 +17,8 @@ public class App {
         car.setNum(2);
         car.setWheel("球型");
         car.setColour("红色");
-//        makeCar.madke(car);
+        makeCar.madke(car);
+
 
 
 
