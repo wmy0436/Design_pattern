@@ -1,6 +1,12 @@
 package org.example.strategy;
 
 public class WorkingDay implements Strategy {
+
+    /**
+     * 策略实现方式
+     * @param time
+     * @return
+     */
     @Override
     public String doSomeThing(Integer time) {
         System.out.println("起床");

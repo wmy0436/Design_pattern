@@ -17,25 +17,21 @@ public class App {
         car.setNum(2);
         car.setWheel("球型");
         car.setColour("红色");
-        makeCar.madke(car);
+//        makeCar.madke(car);
 
 
 
 
         //策略模式
-        Integer  week= 2;
+        Integer  week= 1;
         Context context = new Context();
         switch(week){
             case 1 :
                 context = new Context(new Weekend());
-                break; //可选
+                break;
             case 2 :
-                //语句
                 context = new Context(new WorkingDay());
-                break; //可选
-            //你可以有任意数量的case语句
-            default : //可选
-                //语句
+                break;
         }
         context.doSomeThing(week);
 

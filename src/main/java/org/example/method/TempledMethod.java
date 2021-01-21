@@ -7,6 +7,7 @@ import org.example.Car;
  * 具有统一的步骤或过程
  * 具有不同的操作细节
  * 存在多个具有操作步骤的应用场景，但某些具体的操作细节却各有不同
+ *
  */
 public abstract class TempledMethod {
 
@@ -29,7 +30,7 @@ public abstract class TempledMethod {
      *
      * @param car
      */
-    public void madke(Car car) {
+    public final void madke(Car car) {
         this.makeHead(car);
         this.makeBood(car);
         this.makeTail(car);

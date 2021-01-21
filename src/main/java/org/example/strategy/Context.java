@@ -20,6 +20,9 @@ public class Context {
 
     private Strategy strategy;
 
+    public Context() {
+        this.strategy = strategy;
+    }
     public Context(Strategy strategy) {
         this.strategy = strategy;
     }
@@ -28,7 +31,7 @@ public class Context {
         return this.strategy.doSomeThing(time);
     }
 
-    public Context() {
-        this.strategy = strategy;
-    }
+
+
+
 }
